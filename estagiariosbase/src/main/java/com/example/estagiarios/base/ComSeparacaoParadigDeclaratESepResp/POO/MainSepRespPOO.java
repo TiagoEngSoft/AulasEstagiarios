@@ -3,7 +3,7 @@ package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO;
 import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Impel.*;
 
 
-public class MainSepResp {
+public class MainSepRespPOO {
     
      public static void main(String[] args) {
         GerenciadorPagamentos sistema = new GerenciadorPagamentos();
