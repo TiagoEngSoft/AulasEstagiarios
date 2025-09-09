@@ -3,14 +3,15 @@ package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.PF;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
 public class MainSepRespPF {
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
-    
+        
+
         // Pagamento com PIX ********************************
         Map<String, Object> pix = criarPagamentoViaPix();
         ((Consumer<String>) pix.get("pagarComCodigoEstatico")).accept("COD-PIX-123");
@@ -38,39 +39,7 @@ public class MainSepRespPF {
         System.out.println("Pagamento foi bem-sucedido? " + sucessoCartao);
     }
 
-
-    // ======= Closure que representa o "Gerenciador de Pagamentos" =======
-    public static Map<String, Object> criarGerenciadorPagamentos() {
-        Map<String, Object> gerenciador = new HashMap<>();
-
-        // Método exibirOpcoes
-        Runnable exibirOpcoes = () -> {
-            System.out.println("Opções disponíveis: PIX, Cartão de Crédito, Cartão de Débito");
-        };
-
-        // Método integrarComAPI
-        Consumer<String> integrarComAPI = url -> {
-            System.out.println("Integrando com API em: " + url);
-        };
-
-        // Método processarPagamento (espera uma função e o valor)
-        BiFunction<Function<Double, Boolean>, Double, Boolean> processarPagamento = (metodo, valor) -> {
-            System.out.println("=== Iniciando processamento de pagamento ===");
-            boolean sucesso = metodo.apply(valor);
-            System.out.println("Pagamento realizado? " + sucesso);
-            return sucesso;
-        };
-
-        // Simula "métodos do objeto"
-        gerenciador.put("exibirOpcoes", exibirOpcoes);
-        gerenciador.put("integrarComAPI", integrarComAPI);
-        gerenciador.put("processarPagamento", processarPagamento);
-
-        return gerenciador;
-    }
-
-
-    // ======= Closure que representa o "Pagamento no cartao" =======
+    // ======= Closure que representa o "Pagamento no cartao" =======================================================
     public static Map<String, Object> criarPagamentoCartao() {
         // Estado interno encapsulado via closure
         final String[] tipoOperacao = new String[1];
@@ -121,7 +90,7 @@ public class MainSepRespPF {
         return cartao;
     }
 
-     // ======= Closure que representa o "Pagamento no cartao" =======
+     // ======= Closure que representa o "Pagamento no cartao" =======================================================
      public static Map<String, Object> criarPagamentoViaPix() {
         Map<String, Object> pix = new HashMap<>();
 

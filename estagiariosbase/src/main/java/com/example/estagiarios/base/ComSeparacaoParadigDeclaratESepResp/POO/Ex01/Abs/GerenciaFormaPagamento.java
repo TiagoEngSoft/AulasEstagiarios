@@ -1,4 +1,4 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Abs;
 
 public interface GerenciaFormaPagamento {
     void exibirOpcoes();

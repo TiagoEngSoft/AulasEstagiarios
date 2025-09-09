@@ -1,6 +1,6 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Impel.*;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Impel.*;
 
 
 public class MainSepRespPOO {

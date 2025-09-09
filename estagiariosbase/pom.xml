@@ -13,4 +13,12 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+
+  <dependencies>
+    <dependency>
+      <groupId>com.joseflavio</groupId>
+      <artifactId>copaiba</artifactId>
+      <version>1.0-A17</version>
+    </dependency>
+  </dependencies>
 </project>

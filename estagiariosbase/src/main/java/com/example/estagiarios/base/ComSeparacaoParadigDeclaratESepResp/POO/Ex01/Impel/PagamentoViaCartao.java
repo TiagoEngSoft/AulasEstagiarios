@@ -1,6 +1,6 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Impel;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Impel;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs.*;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Abs.*;
 
 public class PagamentoViaCartao implements PagamentoCartao {
 
