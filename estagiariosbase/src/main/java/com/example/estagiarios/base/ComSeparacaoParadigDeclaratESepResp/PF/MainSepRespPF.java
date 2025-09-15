@@ -6,6 +6,15 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+/*
+ * Neste exemplo, vamos observar como uma função pode ser tratada como um objeto,
+ * utilizando closures e mapeamento de comportamentos (via `map`).
+ * A ideia é mostrar que, ao encapsular comportamentos dentro de closures e 
+ * acessá-los por meio de chaves (como em um objeto), conseguimos "enxergar"
+ * uma função funcionando de forma semelhante a um objeto.
+ */
+
+
 public class MainSepRespPF {
 
     @SuppressWarnings("unchecked")
