@@ -1,10 +1,9 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO;
 
 import java.util.List;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Abs.CadastroFornecedor;
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Abs.CadastroProdutos;
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Impel.GerenciadoCadastros;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs.CadastroFornecedor;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Impel.GerenciadoCadastros;
 
 public class MainPOOEx02 {
     

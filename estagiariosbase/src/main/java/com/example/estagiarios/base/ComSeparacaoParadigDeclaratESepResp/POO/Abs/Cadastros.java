@@ -1,4 +1,4 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Abs;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs;
 
 import java.util.List;
 

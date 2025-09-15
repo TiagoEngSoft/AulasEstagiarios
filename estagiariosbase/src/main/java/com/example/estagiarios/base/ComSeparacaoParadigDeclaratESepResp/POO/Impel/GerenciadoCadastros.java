@@ -1,11 +1,11 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Impel;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Impel;
 
 import java.util.List;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Abs.CadastroFornecedor;
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Abs.CadastroProdutos;
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Models.Fornecedor;
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Models.Produto;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs.CadastroFornecedor;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Abs.CadastroProdutos;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Models.Fornecedor;
+import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Models.Produto;
 
 public class GerenciadoCadastros implements CadastroProdutos, CadastroFornecedor {
     

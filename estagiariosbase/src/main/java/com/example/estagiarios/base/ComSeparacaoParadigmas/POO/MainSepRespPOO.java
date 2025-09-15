@@ -1,6 +1,6 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01;
+package com.example.estagiarios.base.ComSeparacaoParadigmas.POO;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Impel.*;
+import com.example.estagiarios.base.ComSeparacaoParadigmas.POO.Impel.*;
 
 
 public class MainSepRespPOO {
@@ -10,7 +10,7 @@ public class MainSepRespPOO {
 
         // ========== Pagamento via PIX ==========
         PagamentoViaPix pagamentoPix = new PagamentoViaPix();
-        pagamentoPix.pagarComChave("joao@banco.com", 150.00); // Simulação de chamada específica
+        pagamentoPix.pagarComChave("joao@banco.com", 150.00); 
 
         System.out.println("=== Processando pagamento via PIX ===");
         boolean sucessoPix = sistema.processarPagamento(pagamentoPix, 150.00);

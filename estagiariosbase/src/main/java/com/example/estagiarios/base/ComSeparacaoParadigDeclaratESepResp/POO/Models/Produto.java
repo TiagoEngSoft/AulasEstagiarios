@@ -1,4 +1,4 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex02.Models;
+package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Models;
 
 import java.io.Serializable;
 

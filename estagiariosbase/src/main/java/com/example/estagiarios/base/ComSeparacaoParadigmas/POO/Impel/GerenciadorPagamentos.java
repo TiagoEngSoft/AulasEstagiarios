@@ -1,6 +1,6 @@
-package com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Impel;
+package com.example.estagiarios.base.ComSeparacaoParadigmas.POO.Impel;
 
-import com.example.estagiarios.base.ComSeparacaoParadigDeclaratESepResp.POO.Ex01.Abs.*;
+import com.example.estagiarios.base.ComSeparacaoParadigmas.POO.Abs.*;
 
 public class GerenciadorPagamentos implements GerenciaFormaPagamento {
 
