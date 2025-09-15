@@ -1,4 +1,4 @@
-package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.model;
+package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.model;
 
 public class Pessoa {
     private Long id;

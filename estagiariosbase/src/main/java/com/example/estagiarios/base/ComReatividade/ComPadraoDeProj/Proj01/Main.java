@@ -1,7 +1,7 @@
-package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj;
+package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01;
 
-import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.model.*;
-import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.repository.*;
+import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.model.*;
+import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.repository.*;
 
 public class Main {
     public static void main(String[] args) {

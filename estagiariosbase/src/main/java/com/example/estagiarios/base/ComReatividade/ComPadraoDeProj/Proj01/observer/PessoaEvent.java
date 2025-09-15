@@ -1,6 +1,6 @@
-package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.observer;
+package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.observer;
 
-import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.model.*;
+import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.model.*;
 
 public class PessoaEvent {
     public enum Tipo {

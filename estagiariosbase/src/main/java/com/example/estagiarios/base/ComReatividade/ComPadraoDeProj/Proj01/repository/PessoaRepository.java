@@ -1,9 +1,9 @@
-package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.repository;
-
-import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.model.*;
-import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.observer.*;
+package com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.repository;
 
 import java.util.*;
+
+import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.model.*;
+import com.example.estagiarios.base.ComReatividade.ComPadraoDeProj.Proj01.observer.*;
 
 public class PessoaRepository {
     private final Map<Long, Pessoa> banco = new HashMap<>();
