@@ -92,52 +92,72 @@ Sinta-se à vontade para explorar, praticar e perguntar! Este repositório é se
 
 ## 📁 Organização do Repositório
 
-```plaintext
+```
 .
-AULASESTAGIARIOS/
-├── estagiariosbase/ 
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── com/example/estagiarios/base/
-│   │   │   │       ├── ComReatividade/  
-│   │   │   │       │   ├── ComPadraoDeProj/
-│   │   │   │       │   |   ├── Model/
-│   │   │   │       │   |   |   |── Pessoa.java                            
-│   │   │   │       │   |   ├── Observer/
-│   │   │   │       │   |   |   |── PessoaEvent.java
-│   │   │   │       │   |   |   |── PessoaObserver.java 
-│   │   │   │       │   |   ├── Repository/
-│   │   │   │       │   |   |   |── PessoaRepository.java                    
-│   │   │   │       │   |   └── Main.java                             
-│   │   │   │       |   ├── ComRXJava/
-│   │   │   │       │       ├── Model/
-│   │   │   │       │       |   |── Pessoa.java                            
-│   │   │   │       │       ├── Service/
-│   │   │   │       │       |   |── PessoaService.java
-│   │   │   │       │       ├── Repository/
-│   │   │   │       │       |   |── PessoaRepository.java                    
-│   │   │   │       │       └── Main.java 
-│   │   │   │       ├── ComSeparacaoParadigDeclaratESepResp/  
-│   │   │   │       │   ├── PF/                                
-│   │   │   │       │   └── POO/
-│   │   │   │       │       ├── Abs/                            
-│   │   │   │       │       ├── Impel/                         
-│   │   │   │       │       └── MainSepResp.java                         
-│   │   │   │       ├── ComSeparacaoParadigEDeclarativo/        
-│   │   │   │       │   ├── PF/
-│   │   │   │       │   └── POO/
-│   │   │   │       │       ├── Abs/                            
-│   │   │   │       │       ├── Impel/                         
-│   │   │   │       │       └── MainSepResp.java   
-|   |   |   |       ├── ComSeparacaoParadig/       
-│   │   │   │       │   ├── PF/
-│   │   │   │       │   └── POO/
-│   │   │   │       └── SemSepararParadigmas/                 
-│   │   │   │           ├── MainComList.java                  
-│   │   │   │           └── MainComMap.java                    
-│   │   ├── resources/                                         
-│   ├── test/                                                  
-│   └── target/                     
-└── README.md                                                
-
+├── estagiariosbase
+│   ├── src
+│   │   └── main
+│   │       └── java
+│   │           └── com
+│   │               └── example
+│   │                   └── estagiarios
+│   │                       └── base
+│   │                           ├── ComReatividade
+│   │                           │   ├── ComPadraoDeProj
+│   │                           │   │   ├── model
+│   │                           │   │   │   └── Pessoa.java
+│   │                           │   │   ├── observer
+│   │                           │   │   │   ├── PessoaEvent.java
+│   │                           │   │   │   └── PessoaObserver.java
+│   │                           │   │   ├── repository
+│   │                           │   │   │   └── PessoaRepository.java
+│   │                           │   │   └── Main.java
+│   │                           │   └── ComRXJava
+│   │                           │       ├── model
+│   │                           │       │   └── Pessoa.java
+│   │                           │       ├── repository
+│   │                           │       │   └── PessoaRepository.java
+│   │                           │       ├── service
+│   │                           │       │   └── PessoaService.java
+│   │                           │       └── Main.java
+│   │                           ├── ComSeparacaoParadigDeclaratESepResp
+│   │                           │   ├── PF
+│   │                           │   │   └── MainSepRespPF.java
+│   │                           │   └── POO
+│   │                           │       ├── Abs
+│   │                           │       │   └── Cadastros.java
+│   │                           │       ├── Impel
+│   │                           │       │   └── GerenciadoCadastros.java
+│   │                           │       ├── Models
+│   │                           │       │   ├── Fornecedor.java
+│   │                           │       │   └── Produto.java
+│   │                           │       └── MainPOOEx02.java
+│   │                           ├── ComSeparacaoParadigEDeclarativo
+│   │                           │   ├── PF
+│   │                           │   │   └── MainPF02.java
+│   │                           │   └── POO
+│   │                           │       ├── Abs
+│   │                           │       │   └── IAvaliador.java
+│   │                           │       ├── Impel
+│   │                           │       │   └── AvaliadorAlunos.java
+│   │                           │       └── MainPOO2.java
+│   │                           ├── ComSeparacaoParadigmas
+│   │                           │   ├── PF
+│   │                           │   │   ├── Facilitadores01.png
+│   │                           │   │   └── MainPF.java
+│   │                           │   └── POO
+│   │                           │       ├── Abs
+│   │                           │       │   └── GerenciaFormaPagamento.java
+│   │                           │       ├── Impel
+│   │                           │       │   ├── GerenciadorPagamentos.java
+│   │                           │       │   ├── PagamentoViaCartao.java
+│   │                           │       │   └── PagamentoViaPix.java
+│   │                           │       └── MainSepRespPOO.java
+│   │                           └── SemSepararParadigmas
+│   │                               ├── MainComList.java
+│   │                               └── MainComMap.java
+│   └── pom.xml
+├── .gitignore
+├── LICENSE
+└── README.md
+```
