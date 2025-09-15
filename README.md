@@ -63,7 +63,7 @@ Ao explorar os exemplos e desafios disponíveis neste repositório, você será 
 ```plaintext
 .
 AULASESTAGIARIOS/
-├── estagiariosbase/             <- Projeto principal
+├── estagiariosbase/ 
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/
