@@ -93,7 +93,6 @@ Sinta-se à vontade para explorar, praticar e perguntar! Este repositório é se
 ## 📁 Organização do Repositório
 
 ```
-.
 ├── estagiariosbase
 │   ├── src
 │   │   └── main
@@ -104,14 +103,36 @@ Sinta-se à vontade para explorar, praticar e perguntar! Este repositório é se
 │   │                       └── base
 │   │                           ├── ComReatividade
 │   │                           │   ├── ComPadraoDeProj
-│   │                           │   │   ├── model
-│   │                           │   │   │   └── Pessoa.java
-│   │                           │   │   ├── observer
-│   │                           │   │   │   ├── PessoaEvent.java
-│   │                           │   │   │   └── PessoaObserver.java
-│   │                           │   │   ├── repository
-│   │                           │   │   │   └── PessoaRepository.java
-│   │                           │   │   └── Main.java
+│   │                           │   │   ├── Proj01
+│   │                           │   │   │   ├── model
+│   │                           │   │   │   │   └── Pessoa.java
+│   │                           │   │   │   ├── observer
+│   │                           │   │   │   │   ├── PessoaEvent.java
+│   │                           │   │   │   │   └── PessoaObserver.java
+│   │                           │   │   │   ├── repository
+│   │                           │   │   │   │   └── PessoaRepository.java
+│   │                           │   │   │   └── Main.java
+│   │                           │   │   └── Proj02
+│   │                           │   │       ├── app
+│   │                           │   │       │   └── Aplicacao.java
+│   │                           │   │       ├── domain
+│   │                           │   │       │   ├── events
+│   │                           │   │       │   │   └── PessoaEvent.java
+│   │                           │   │       │   ├── model
+│   │                           │   │       │   │   └── Pessoa.java
+│   │                           │   │       │   ├── observers
+│   │                           │   │       │   │   ├── AcaoListner.java
+│   │                           │   │       │   │   ├── CustoCompListner.java
+│   │                           │   │       │   │   ├── Listner.java
+│   │                           │   │       │   │   └── ResumoAcaoListner.java
+│   │                           │   │       │   └── repository
+│   │                           │   │       │       └── GerenciadorEventosPessoasPub.java
+│   │                           │   │       ├── infrastructure
+│   │                           │   │       │   └── observadores
+│   │                           │   │       │       ├── AcoesListner.java
+│   │                           │   │       │       ├── CustoComputacionalListner.java
+│   │                           │   │       │       └── ResumoDeAcoesListner.java
+│   │                           │   │       └── Main.java
 │   │                           │   └── ComRXJava
 │   │                           │       ├── model
 │   │                           │       │   └── Pessoa.java
