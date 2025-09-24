@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paradigmas de Programação em Java</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4caf50;
+            margin-top: 40px;
+        }
+
+        .box {
+            background: #f1f1f1;
+            border-left: 6px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        footer {
+            background: #eee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💡 Paradigmas de Programação em Java</h1>
+        <p>Comparando diferentes formas de pensar e programar 👨‍💻🧠</p>
+    </header>
+
+    <main>
+
+        <h2>🧠 O que são paradigmas de programação?</h2>
+        <div class="box">
+            Um <strong>paradigma de programação</strong> é um estilo ou modelo de como resolver problemas com código.
+            Ele influencia a forma como organizamos, estruturamos e executamos as instruções.<br><br>
+            Java é uma linguagem que suporta múltiplos paradigmas — como o <strong>estruturado</strong>,
+            <strong>procedural</strong>, <strong>orientado a objetos</strong>, <strong>funcional</strong>,
+            <strong>declarativo</strong> e até <strong>reativo</strong>.
+        </div>
+
+        <h2>📌 Exemplo base</h2>
+        <div class="box">
+            Em todos os paradigmas, resolveremos o mesmo problema: <br><br>
+            <strong>"Calcular a soma dos números pares em uma lista de inteiros."</strong>
+        </div>
+
+        <h2>🔹 Estruturado (Imperativo)</h2>
+        <div class="box">
+            Controle direto do fluxo com loops e variáveis.
+        </div>
+        <pre><code>List&lt;Integer&gt; numeros = Arrays.asList(1, 2, 3, 4, 5, 6);
+int soma = 0;
+for (int i = 0; i &lt; numeros.size(); i++) {
+    if (numeros.get(i) % 2 == 0) {
+        soma += numeros.get(i);
+    }
+}
+System.out.println("Soma dos pares: " + soma);</code></pre>
+
+        <h2>🔹 Procedural</h2>
+        <div class="box">
+            Uso de funções para organizar e reutilizar lógica.
+        </div>
+        <pre><code>public static int somarPares(List&lt;Integer&gt; lista) {
+    int soma = 0;
+    for (int num : lista) {
+        if (num % 2 == 0) {
+            soma += num;
+        }
+    }
+    return soma;
+}</code></pre>
+
+        <h2>🔹 Funcional</h2>
+        <div class="box">
+            Usa lambdas e streams. Foco em funções puras e imutabilidade.
+        </div>
+        <pre><code>int soma = numeros.stream()
+    .filter(n -&gt; n % 2 == 0)
+    .mapToInt(Integer::intValue)
+    .sum();</code></pre>
+
+        <h2>🔹 Orientado a Objetos (POO)</h2>
+        <div class="box">
+            Encapsula dados e comportamentos em objetos.
+        </div>
+        <pre><code>class Calculadora {
+    private List&lt;Integer&gt; numeros;
+
+    public Calculadora(List&lt;Integer&gt; numeros) {
+        this.numeros = numeros;
+    }
+
+    public int somarPares() {
+        int soma = 0;
+        for (int num : numeros) {
+            if (num % 2 == 0) {
+                soma += num;
+            }
+        }
+        return soma;
+    }
+}</code></pre>
+
+        <h2>🔹 Declarativo</h2>
+        <div class="box">
+            Dizemos <em>o que</em> queremos, não <em>como</em> fazer.
+        </div>
+        <pre><code>int soma = numeros.stream()
+    .filter(n -&gt; n % 2 == 0)
+    .reduce(0, Integer::sum);</code></pre>
+
+        <h2>🔹 Reativo</h2>
+        <div class="box">
+            Programação baseada em eventos assíncronos e fluxos de dados.
+        </div>
+        <pre><code>Flux&lt;Integer&gt; numeros = Flux.just(1, 2, 3, 4, 5, 6);
+numeros.filter(n -&gt; n % 2 == 0)
+       .reduce(0, (a, b) -&gt; a + b)
+       .subscribe(soma -&gt; System.out.println("Soma dos pares: " + soma));</code></pre>
+
+        <h2>📊 Tabela Comparativa</h2>
+        <table>
+            <tr>
+                <th>Paradigma</th>
+                <th>Estilo</th>
+                <th>Abordagem</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td><strong>Estruturado</strong></td>
+                <td>Imperativo</td>
+                <td>Passo a passo com loops</td>
+                <td><code>for, if, +=</code></td>
+            </tr>
+            <tr>
+                <td><strong>Procedural</strong></td>
+                <td>Imperativo com funções</td>
+                <td>Funções organizam a lógica</td>
+                <td><code>somarPares()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Funcional</strong></td>
+                <td>Declarativo</td>
+                <td>Funções puras, sem estado</td>
+                <td><code>stream().filter().sum()</code></td>
+            </tr>
+            <tr>
+                <td><strong>POO</strong></td>
+                <td>Orientado a objetos</td>
+                <td>Modelagem com classes</td>
+                <td><code>Calculadora.somarPares()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Declarativo</strong></td>
+                <td>Alto nível</td>
+                <td>Descreve o "o que fazer"</td>
+                <td><code>reduce()</code></td>
+            </tr>
+            <tr>
+                <td><strong>Reativo</strong></td>
+                <td>Assíncrono / Eventos</td>
+                <td>Fluxos e reações</td>
+                <td><code>Flux.subscribe()</code></td>
+            </tr>
+        </table>
+
+        <h2>📌 Conclusão da visão de paradigmas em Java</h2>
+        <div class="box">
+            Java é uma linguagem poderosa por permitir múltiplos paradigmas.<br><br>
+            Cada paradigma oferece formas diferentes de <strong>organizar o pensamento</strong> e <strong>resolver
+                problemas</strong>. Entender e saber usar cada um no momento certo é uma habilidade essencial para todo
+            desenvolvedor Java moderno.
+        </div>
+
+
+
+        <h2>🌍 Linguagens por Paradigma</h2>
+        <div class="box">
+            Embora muitas linguagens modernas sejam multiparadigma, algumas são mais associadas a determinados estilos
+            de
+            programação. Veja exemplos a seguir:
+        </div>
+
+        <table>
+            <tr>
+                <th>Paradigma</th>
+                <th>Linguagem Exemplar</th>
+                <th>Exemplo de Código</th>
+            </tr>
+            <tr>
+                <td><strong>Estruturado</strong></td>
+                <td><strong>C</strong></td>
+                <td>
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int soma = 0;
+    for (int i = 1; i &lt;= 10; i++) {
+        if (i % 2 == 0)
+            soma += i;
+    }
+    printf("Soma dos pares: %d\n", soma);
+    return 0;
+}</code></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Procedural</strong></td>
+                <td><strong>Pascal</strong></td>
+                <td>
+                    <pre><code>function SomaPares: Integer;
+var i, soma: Integer;
+begin
+    soma := 0;
+    for i := 1 to 10 do
+        if i mod 2 = 0 then
+            soma := soma + i;
+    SomaPares := soma;
+end;</code></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Funcional</strong></td>
+                <td><strong>Haskell</strong></td>
+                <td>
+                    <pre><code>somarPares :: [Int] -&gt; Int
+somarPares xs = sum (filter even xs)</code></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Orientado a Objetos (POO)</strong></td>
+                <td><strong>Java</strong></td>
+                <td>
+                    <pre><code>public class Pessoa {
+    private String nome;
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+}</code></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Declarativo</strong></td>
+                <td><strong>SQL</strong></td>
+                <td>
+                    <pre><code>SELECT SUM(valor)
+FROM compras
+WHERE tipo = 'par';</code></pre>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Reativo</strong></td>
+                <td><strong>JavaScript + RxJS</strong></td>
+                <td>
+                    <pre><code>from([1, 2, 3, 4])
+  .pipe(
+    filter(x =&gt; x % 2 === 0),
+    reduce((acc, val) =&gt; acc + val, 0)
+  )
+  .subscribe(console.log);</code></pre>
+                </td>
+            </tr>
+        </table>
+
+        <h2>✅ Considerações Finais</h2>
+        <div class="box">
+            Nenhuma linguagem é limitada a um único paradigma, mas algumas têm características que facilitam certos
+            estilos.
+            <br><br>
+            Estudar paradigmas ajuda você a <strong>escolher a abordagem certa para cada problema</strong> — tornando
+            seu
+            código mais limpo, eficiente e sustentável.
+        </div>
+    </main>
+
+    <footer>
+        <p>Tiago Santos • Paradigmas de Programação em Java • 2025</p>
+    </footer>
+
+
+</body>
+
+</html>

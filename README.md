@@ -93,6 +93,8 @@ Sinta-se à vontade para explorar, praticar e perguntar! Este repositório é se
 ## 📁 Organização do Repositório
 
 ```
+├── Intoducao
+│   └── ParadigmasEmJava.html
 ├── estagiariosbase
 │   ├── src
 │   │   └── main
@@ -177,8 +179,4 @@ Sinta-se à vontade para explorar, praticar e perguntar! Este repositório é se
 │   │                           └── SemSepararParadigmas
 │   │                               ├── MainComList.java
 │   │                               └── MainComMap.java
-│   └── pom.xml
-├── .gitignore
-├── LICENSE
-└── README.md
 ```
